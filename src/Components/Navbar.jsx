@@ -15,6 +15,9 @@ import { Menu } from '@mui/material';
 // const pages = ['Products', 'Pricing', 'Blog'];
 const pages = [];
 const settings = [];
+const head={
+  backgroundColor:"#7d2020"
+}
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -35,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={head}>
     <Container maxWidth="xl">
       <Toolbar disableGutters>
        

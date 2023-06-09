@@ -23,14 +23,19 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
   }));
   const tileBox = {
-    marginTop:"60px"
+    marginTop:"60px",
+    fontWeight: "600",
+    marginBottom: "30px",
+    fontSize: "40px",
+    color: "#6c609c"
   };
   const cards={
    
     textAlign: "left",
     paddingLeft: "50px",
     margin: "10px",
-    border: "1px solid lightgray"
+    border: "1px solid lightgray",
+    backgroundColor:"#e1e1e1"
   }
   const titles={
 fontWeight:"600"
@@ -42,7 +47,12 @@ fontWeight:"600"
     marginBottom:"10px"
   }
   const descriptions={
-
+color:"gray"
+  }
+  const btn={
+backgroundColor:"#7d2020",
+border:"1px solid #7d2020",
+marginBottom: "50px"
   }
 const Home = () => {
     // var todolist=[];
@@ -101,7 +111,7 @@ const Home = () => {
   <TextField style={{width:'30%'}} onChange={descriptionChange} value={description}  id="outlined-basic" label="Description" variant="outlined" />
   </Item>
   <Item>
-  <Button variant="contained" onClick={addTodo} endIcon={<AddIcon/>}>
+  <Button variant="contained" style={btn} onClick={addTodo} endIcon={<AddIcon/>}>
   SUBMIT
 </Button>
   </Item>
